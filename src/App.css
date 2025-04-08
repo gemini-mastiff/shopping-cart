@@ -1,0 +1,52 @@
+.header {
+  background-color: var(--ACCENT-2);
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo__container {
+  text-align: center;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.nav {
+  background-color: var(--BG-COLOUR);
+  padding: 0.2em 0;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.link__list {
+  display: flex;
+  gap: 2em;
+  list-style: none;
+  padding: 0;
+}
+
+.link__item {
+  font-size: 1rem;
+}
+
+.link__item > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link__item > a:hover {
+  text-decoration: underline;
+}
