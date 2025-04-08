@@ -29,6 +29,9 @@ function App() {
         </nav>
       </div>
       <Outlet />
+      <footer className="footer">
+        <p>&copy; Joe Bloggs, 1842</p>
+      </footer>
     </>
   );
 }
