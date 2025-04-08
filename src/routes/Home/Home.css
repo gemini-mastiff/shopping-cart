@@ -1,0 +1,85 @@
+.hero__bg {
+  background-color: var(--ACCENT-1);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 3em 0;
+}
+
+.hero__para,
+.info__para {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+  width: 55%;
+  color: #fff;
+}
+
+.hero__title,
+.info2__title {
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
+.hero__cta {
+  background-color: var(--MAIN-COLOUR);
+  color: var(--ACCENT-1);
+  text-transform: uppercase;
+  padding: 1em 1.5em;
+  border-radius: 100px;
+}
+
+.hero__img,
+.info__img {
+  width: 43%;
+}
+
+.hero__img > img,
+.info__img > img {
+  width: 100%;
+  border-radius: 1em;
+}
+
+.page__bg {
+  background-color: var(--MAIN-COLOUR);
+}
+
+.page {
+  padding: 3em;
+}
+
+.info1 {
+  text-align: center;
+}
+
+.info__container {
+  display: flex;
+  gap: 2em;
+}
+
+.info__title--main {
+  color: var(--ACCENT-1);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.info__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.info2__bg {
+  background-color: var(--ACCENT-2);
+}
+
+.info2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 3em 0;
+}
