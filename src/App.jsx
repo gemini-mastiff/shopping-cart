@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
+import cartSvg from "./assets/cart.svg";
 import "./App.css";
 
 function App() {
@@ -22,7 +23,9 @@ function App() {
             </ul>
             <ul className="link__list link__list--secondary">
               <li className="link__item">
-                <Link to="cart">CART</Link>
+                <Link className="cart__link" to="cart">
+                  <img className="cart__icon" src={cartSvg} />
+                </Link>
               </li>
             </ul>
           </div>

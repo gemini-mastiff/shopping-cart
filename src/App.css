@@ -51,6 +51,11 @@
   text-decoration: underline;
 }
 
+.cart__icon {
+  width: 35px;
+  margin-top: 10px;
+}
+
 .footer {
   background-color: var(--BG-COLOUR);
   text-align: center;
