@@ -14,15 +14,15 @@ function App() {
           <div className="nav__container container">
             <ul className="link__list link__list--primary">
               <li className="link__item">
-                <Link to="home">HOME</Link>
+                <Link to="/">HOME</Link>
               </li>
               <li className="link__item">
-                <a href="">STORE</a>
+                <Link to="store">STORE</Link>
               </li>
             </ul>
             <ul className="link__list link__list--secondary">
               <li className="link__item">
-                <a href="">CART</a>
+                <Link to="cart">CART</Link>
               </li>
             </ul>
           </div>
