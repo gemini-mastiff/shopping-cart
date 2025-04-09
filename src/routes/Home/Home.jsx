@@ -1,4 +1,5 @@
 import "./Home.css";
+import { Link } from "react-router-dom";
 import ClownImg from "../../assets/clown.jpg";
 
 export default function Home() {
@@ -14,7 +15,9 @@ export default function Home() {
               nihil ipsam suscipit ratione alias aspernatur ad quasi aliquid
               neque dolore saepe dolor!
             </p>
-            <a className="hero__cta">Call to Action!</a>
+            <Link className="hero__cta" to="store">
+              Call to Action!
+            </Link>
           </div>
           <div className="hero__img">
             <img src={ClownImg} alt="clown shouting" />

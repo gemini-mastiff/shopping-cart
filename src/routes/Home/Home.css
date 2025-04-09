@@ -27,10 +27,16 @@
 
 .hero__cta {
   background-color: var(--MAIN-COLOUR);
-  color: var(--ACCENT-1);
-  text-transform: uppercase;
   padding: 1em 1.5em;
   border-radius: 100px;
+  color: var(--ACCENT-1);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.hero__cta:hover {
+  opacity: 0.9;
+  text-decoration: underline;
 }
 
 .hero__img,
