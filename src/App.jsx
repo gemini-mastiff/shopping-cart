@@ -71,6 +71,9 @@ function App() {
               <li className="link__item">
                 <Link className="cart__link" to="cart">
                   <img className="cart__icon" src={cartSvg} />
+                  {cart.length > 0 && (
+                    <p className="cart__number">{cart.length}</p>
+                  )}
                 </Link>
               </li>
             </ul>
