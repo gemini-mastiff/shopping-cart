@@ -1,0 +1,13 @@
+.storepage {
+  background-color: var(--MAIN-COLOUR);
+}
+
+.page {
+  text-align: center;
+}
+
+.products__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
