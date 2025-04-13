@@ -3,7 +3,7 @@ import ProductCard from "../../components/ProductCard/ProductCard.jsx";
 import "./Store.css";
 
 export default function Store() {
-  const { productArr, error, loading } = useOutletContext();
+  const { productArr, error } = useOutletContext();
 
   return (
     <div className="storepage">
@@ -11,8 +11,15 @@ export default function Store() {
         <h1>PRODUCTS</h1>
         <hr />
         <div className="products__container">
-          {loading ? (
-            <p>Loading...</p>
+          {!productArr ? (
+            error ? (
+              <>
+                <p>An Error has occurred.</p>
+                <p>{error}</p>
+              </>
+            ) : (
+              <p>Loading...</p>
+            )
           ) : (
             productArr.map((product) => {
               return (
