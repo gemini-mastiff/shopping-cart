@@ -2,6 +2,7 @@
 }
 
 .product__img {
+  object-fit: contain;
   width: 50%;
   height: 50%;
 }
