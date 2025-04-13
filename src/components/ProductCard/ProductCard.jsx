@@ -1,7 +1,9 @@
 import { useState } from "react";
 import "./ProductCard.css";
+import { useOutletContext } from "react-router-dom";
 
 export default function ProductCard({ id, img, price, title, desc }) {
+  const { handleAdd } = useOutletContext();
   const [quantity, setQuantity] = useState(1);
 
   const handleIncrement = () => {
@@ -23,7 +25,7 @@ export default function ProductCard({ id, img, price, title, desc }) {
       <p className="product__desc">{desc}</p>
       <div className="product-buttons-container">
         <div className="quantity-container">
-          <button className="decrement__btn" onClick={handleDecrement}>
+          <button className="decrement-btn" onClick={handleDecrement}>
             -
           </button>
           <p className="quanitity__counter">{quantity}</p>
@@ -31,7 +33,9 @@ export default function ProductCard({ id, img, price, title, desc }) {
             +
           </button>
         </div>
-        <div className="add-item-btn">Add to Cart</div>
+        <div className="add-item-btn" onClick={() => handleAdd(id, quantity)}>
+          Add to Cart
+        </div>
       </div>
     </div>
   );

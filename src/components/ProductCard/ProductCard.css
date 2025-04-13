@@ -36,6 +36,23 @@
 
 .quantity-container {
   display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.increment-btn,
+.decrement-btn {
+  font: inherit;
+  background-color: var(--BG-COLOUR);
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+}
+
+.increment-btn:hover,
+.decrement-btn:hover {
+  opacity: 0.8;
 }
 
 .add-item-btn {
@@ -45,4 +62,8 @@
   color: var(--MAIN-COLOUR);
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.add-item-btn:hover {
+  opacity: 0.8;
 }

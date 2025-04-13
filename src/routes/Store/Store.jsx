@@ -11,18 +11,22 @@ export default function Store() {
         <h1>PRODUCTS</h1>
         <hr />
         <div className="products__container">
-          {productArr.map((product) => {
-            return (
-              <ProductCard
-                key={product.id}
-                id={product.id}
-                title={product.title}
-                img={product.image}
-                price={product.price}
-                desc={product.description}
-              />
-            );
-          })}
+          {loading ? (
+            <p>Loading...</p>
+          ) : (
+            productArr.map((product) => {
+              return (
+                <ProductCard
+                  key={product.id}
+                  id={product.id}
+                  title={product.title}
+                  img={product.image}
+                  price={product.price}
+                  desc={product.description}
+                />
+              );
+            })
+          )}
         </div>
       </div>
     </div>

@@ -26,8 +26,28 @@ function useProducts() {
 
 function App() {
   const { productArr, error, loading } = useProducts();
+  const [cart, setCart] = useState([]);
 
-  console.log(productArr);
+  const handleAdd = (id, quantity) => {
+    setCart([...cart, { id, quantity }]);
+  };
+
+  const handleDel = (id) => {
+    setCart(cart.filter((item) => item.id !== id));
+  };
+
+  const handleQuantity = (id, newQuantity) => {
+    if (newQuantity < 1) return;
+    else {
+      setCart(
+        cart.map((item) =>
+          item.id === id ? { id: item.id, quantity: newQuantity } : item
+        )
+      );
+    }
+  };
+
+  console.log(cart);
 
   return (
     <>
@@ -57,7 +77,17 @@ function App() {
           </div>
         </nav>
       </div>
-      <Outlet context={{ productArr, error, loading }} />
+      <Outlet
+        context={{
+          productArr,
+          error,
+          loading,
+          cart,
+          handleAdd,
+          handleDel,
+          handleQuantity,
+        }}
+      />
       <footer className="footer">
         <p>&copy; Joe Bloggs, 1842</p>
       </footer>
