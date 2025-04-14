@@ -29,7 +29,11 @@ function App() {
   const [cart, setCart] = useState([]);
 
   const handleAdd = (id, quantity) => {
-    setCart([...cart, { id, quantity }]);
+    const oldItem = cart.find((item) => item.id === id);
+    if (oldItem) {
+      const copy = cart.filter((item) => item.id !== id);
+      setCart([...copy, { id, quantity: oldItem.quantity + quantity }]);
+    } else setCart([...cart, { id, quantity }]);
   };
 
   const handleDel = (id) => {
