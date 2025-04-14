@@ -28,7 +28,7 @@ export default function Store() {
                   id={product.id}
                   title={product.title}
                   img={product.image}
-                  price={product.price}
+                  price={Number(product.price).toFixed(2)}
                   desc={product.description}
                 />
               );
