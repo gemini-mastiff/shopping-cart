@@ -65,4 +65,5 @@
 
 .add-item-btn:hover {
   opacity: 0.8;
+  cursor: pointer;
 }
