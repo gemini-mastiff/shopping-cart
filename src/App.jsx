@@ -51,8 +51,6 @@ function App() {
     }
   };
 
-  console.log(cart);
-
   return (
     <>
       <div className="header">
