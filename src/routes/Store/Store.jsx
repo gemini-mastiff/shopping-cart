@@ -7,8 +7,8 @@ export default function Store() {
 
   return (
     <div className="storepage">
-      <div className="container">
-        <h1>PRODUCTS</h1>
+      <div className="container page">
+        <h1 className="storepage__header">PRODUCTS</h1>
         <hr />
         <div className="products__container">
           {!productArr ? (

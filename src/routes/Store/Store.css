@@ -2,7 +2,9 @@
   background-color: var(--MAIN-COLOUR);
 }
 
-.page {
+.storepage__header {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -10,4 +12,5 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
+  margin: 2em 0;
 }
