@@ -51,6 +51,7 @@
 .increment-btn:hover,
 .decrement-btn:hover {
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .add-item-btn {
